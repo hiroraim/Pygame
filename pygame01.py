@@ -5,7 +5,7 @@ from pygame.locals import QUIT
 def main():
     pygame.init()
     surface = pygame.display.set_mode((300,300))
-    pygame.display.set_caption("Hello pygame")
+    pygame.display.set_caption("Hello pygame!")
     clock = pygame.time.Clock()
     font = pygame.font.Font(None, 30)
     text = font.render('Hello pygame', True, (10, 10, 10))
