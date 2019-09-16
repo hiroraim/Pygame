@@ -5,7 +5,7 @@ from pygame.locals import QUIT
 
 def main():
     pygame.init()
-    surface = pygame.display.set_mode((300,300))
+    surface = pygame.display.set_mode((300,400))
     pygame.display.set_caption("Pygame draw")
     clock = pygame.time.Clock()
     while True:
@@ -29,12 +29,15 @@ def main():
         #pygame.draw.circle(surface,(255,0,255),(200,100),10)
 
         """
-        ellipse(画面,(R,G,B),(中心の座標,楕円の長形(横の長さ),楕円の短径(たての長さ)))
+        ellipse(画面,(R,G,B),(中心の座標,楕円の長形(横の長さ),楕円の短径(たての長さ)),線の太さ)
         """
-        pygame.draw.ellipse(surface,(100,100,100),(50,100,200,200),2)
+        #pygame.draw.ellipse(surface,(100,100,100),(50,100,200,200),2)
         #pygame.draw.ellipse(surface,(200,200,200),(150,150,80,40),)
 
-        #pygame.draw.line(surface, (0,100,200), (8,220),(200,340),3)
+        """
+        line(画面,(R,G,B),(始点の座標),(終点の座標),線の太さ)
+        """
+        pygame.draw.line(surface, (0,0,0), (0,0),(300,400),3)
 
         pygame.display.update()
         clock.tick(10)
